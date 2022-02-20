@@ -24,5 +24,12 @@ The [Mentorship Eligibility table](https://github.com/SohaT7/Pewlett-Hackard-Ana
 ![Mentorship Eligibility table](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/mentorship_eligibility.png)
 
 ## Results
+The results we can derive from the tables we created are as follows:
+- The highest number of retirees will be Senior Engineers (at 25,916) whereas the lowest will be managers (only 2 will be retiring). 
+- The second highest number of retirees will be those with the title of Senior Staff. 
+- A total of 1,549 employees are eligible for the mentorship program. 
+- There is no manager in our list of employees who are eligible for the mentorship program, even though 2 managers will be retiring from Pewlett Hackard.
 
 ## Summary
+According to the Retiring Titles table, there will be 25,916 Senior Engineers, 24,926 Senior Staff, 9,285 Engineers, 7,636 Staff, 3,603 Technique Leaders, 1,090 Assistant Engineers, and 2 Managers that will be retiring. This makes up to a total of 72,458 employees retiring soon, and 72,458 roles that will need to be filled as the "silver tsunami" sets in. It will be extrememly helpful to create a table by ascending dates of retirement for the employees (sorted by titles as well as by departments). This will tell management, HR, and each department about which roles need to be filled first and/or on an immediate basis and exactly by when. 
+As of yet, we do not have any mentorship program-eligible employees that can train new managers. There might be a dearth of such trainers on other levels or departments too. A table can be created to compare how many employees eligible for the mentorship program fall in each department particularly. Moreover, this can be compared with how many employees that department will be losing to retirement (apart from these mentors).
