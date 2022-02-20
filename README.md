@@ -10,7 +10,7 @@ In order to efficiently perform both these assignments, an Entity Relationships 
 ![ERD for the 6 data tables we were provided with](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/EmployeeDB.png)
 
 ### Deliverable 1: The Number of Retiring Employees by Title
-For this deliverable, a Retirement Titles was first created. It holds the titles of all the emplyees born between January 1, 1952 and December 31, 1955. 
+For this deliverable, a [Retirement Titles](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Data/retirement_titles.csv) was first created. It holds the titles of all the emplyees born between January 1, 1952 and December 31, 1955. 
 ![Retirement Titles table](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/retirement_titles.png)
 
 Since some of the employees have multiple titles (such as due to promotion(s)), we tweaked the table to include only the most recent titles for such employees. Additionally, we excluded the ones who have already left the company. This is reflected in the Unique Titles table.
