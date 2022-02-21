@@ -26,8 +26,8 @@ The [Mentorship Eligibility table](https://github.com/SohaT7/Pewlett-Hackard-Ana
 ## Results
 The results we can derive from the tables we created are as follows:
 
-!(https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Retiring_Titles_Rank.png)
-!(https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Mentorship_eligibility_Analyze.png)
+![Image1](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Retiring_Titles_Rank.png)
+![Image2](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Mentorship_eligibility_Analyze.png)
 
 - The highest number of retirees will be Senior Engineers (at 25,916) whereas the lowest will be managers (only 2 will be retiring). 
 - The second highest number of retirees will be those with the title of Senior Staff. 
