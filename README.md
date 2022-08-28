@@ -57,7 +57,8 @@ The results that can be derived from the tables that have been created are as fo
 
 ## Summary
 According to the Retiring Titles table, there will be 25,916 Senior Engineers, 24,926 Senior Staff, 9,285 Engineers, 7,636 Staff, 3,603 Technique Leaders, 1,090 Assistant Engineers, and 2 Managers that will be retiring. This makes up to a total of 72,458 employees retiring soon, and 72,458 roles that will need to be filled in. It will be extrememly helpful to create a table by ascending dates of retirement for the employees (sorted by titles as well as by departments). This will tell management, HR, and each department about which roles need to be filled first and/or on an immediate basis, and exactly by when. 
+
 As of yet, we do not have any mentorship program-eligible employees that can train new managers. There might be a dearth of such trainers on other levels or in other departments too. A table can be created to compare how many of the employees who are eligible for the mentorship program, fall in each department particularly. Moreover, this can be compared with how many employees that department will be losing to retirement (apart from these mentors). For instance, say the Sales department will have 2 Senior Staff and 10 Staff retiring soon. If Sales department only has 4 Staff eligible for mentorship program, that means there is a dearth of mentors/trainers in the Sales department for the new hires/promotees, and the gap needs to be adjusted somehow. 
 
-## Summary
+## Contact Information
 Email: st.sohatariq@gmail.com
