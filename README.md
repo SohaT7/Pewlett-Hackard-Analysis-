@@ -1,54 +1,78 @@
 # An Analysis for Pewlett Hackard
+## Table of Contents
+- [Overview of the Analysis](#overview-of-the-analysis)
+    - [Purpose](#purpose)
+    - [About the Dataset](#about-the-dataset)
+    - [Tools Used](#tools-used)
+    - [Description](#description)
+- [Results](#results)
+    - [The Number of Retiring Employees by Title](#The-Number-of-Retiring-Employees-by-Title)
+        - [Retirement Employees by Title](#Retirement-Employees-by-Title)
+        - [Unique Titles](#Unique-Titles)
+        - [Generating the Number of Retiring Employees by Title](#Generating-the-Number-of-Retiring-Employees-by-Title)
+    - [The Employees Eligible for the Mentorship Program](#The-Employees-Eligible-for-the-Mentorship-Program)
+    - [Coalescing the Results](#Coalescing-the-Results)
+- [Summary](#summary)
+- [Contact Information](#contact-information)
 
 ## Overview of the Analysis
 ### Purpose:
 The purpose of [this analysis](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Queries/Employee_Database_challenge.sql) is to determine how many employees at the company will soon be retiring against each title, and to determine which employees will be eligible for the mentorship program. The mentorship program is intended to help the retirees transition from full-time to part-time, where they will mentor the new hires before retiring completely. 
 
 ### About the Dataset:
-CSV datasets:
-
-[Departments (Code and Name)](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Data/departments.csv)
-
-[Department Employees (Code, Department Code, Dates of Employment)](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Data/dept_emp.csv)
-
-[Department Manager](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Data/dept_manager.csv)
-
-[Employees (Employee Code, Name, Birthdate, Gender, Hire date)](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Data/employees.csv)
-
-[Salaries (Employee Code, Salary, Dates)](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Data/salaries.csv)
-
-[Titles (Employee Code, Title, Dates)](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Data/titles.csv)
+The dataset comprises of the following CSV files:
+ - [Departments](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Data/departments.csv)
+ - [Department Employees](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Data/dept_emp.csv) 
+ - [Department Manager](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Data/dept_manager.csv)
+ - [Employees](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Data/employees.csv) 
+ - [Salaries (Employee Code, Salary, Dates)](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Data/salaries.csv)
+ - [Titles (Employee Code, Title, Dates)](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Data/titles.csv)
 
 ### Tools Used:
-SQL
-
-PostgresSQL
-
-pgAdmin
+ - SQL
+ - PostgreSQL
+ - pgAdmin
 
 ### Description:
-In order to efficiently perform the analysis, an Entity Relationships Diagram (ERD) was created. It lays out the relationships between different tables. This ERD made writing out [the queries](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Queries/Employee_Database_challenge.sql) alot more easier.
-![ERD for the 6 data tables we were provided with](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/EmployeeDB.png)
+In order to efficiently perform the analysis, an Entity Relationships Diagram (ERD) was created (click [here](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Queries/schema.sql) to view the queries generated). It lays out the relationships between the 6 tables created from the data files:
+ - departments
+ - employees
+ - dept_manager
+ - salaries
+ - titles
+ - dept_emp
 
+![ERD for the 6 data tables we were provided with](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Images/EmployeeDB.png)
+
+In order analyse who the soon-to-be-retirees are, and whether they are eligible to mentor the new hires, the following four new tables were created (click [here](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Queries/Employee_Database_challenge.sql) to view the queries generated):
+ - retirement_titles
+ - unique_titles
+ - retiring_titles
+ - mentorship_eligibility
+
+## Results
 ### The Number of Retiring Employees by Title:
+#### Retirement Employees by Title 
 To determine the number of retiring employees by title, a [Retirement Titles table](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Data/retirement_titles.csv) was first created. It holds the titles of all the employees born between January 1, 1952 and December 31, 1955. 
-![Retirement Titles table](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/retirement_titles.png)
+![Retirement Titles table](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Images/retirement_titles.png)
 
+#### Unique Titles
 Since some of the employees have multiple titles (such as due to promotion(s)), the table was tweaked to include only the most recent titles for such employees. Additionally, the ones who have already left the company were excluded from the table. This is reflected in the [Unique Titles table](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Data/unique_titles.csv).
-![Unique Titles table](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/unique_titles.png) 
+![Unique Titles table](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Images/unique_titles.png) 
 
+#### Generating the Number of Retiring Employees by Title
 Next, a total count against each title was calculated for the soon-to-be retirees, as is shown in the [Retiring Titles table](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Data/retiring_titles.csv) below.
-![Retiring Titles](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/retiring_titles.png)
+![Retiring Titles](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Images/retiring_titles.png)
 
 ### The Employees Eligible for the Mentorship Program:
 The [Mentorship Eligibility table](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Data/mentorship_eligibility.csv) contains the important information on all the employees born between January 1, 1965 and December 31, 1965, who are eligible for the mentorship program. 
-![Mentorship Eligibility table](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/mentorship_eligibility.png)
+![Mentorship Eligibility table](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Images/mentorship_eligibility.png)
 
-## Results
+### Coalescing the Results:
 The results that can be derived from the tables that have been created are as follows:
 
-![Image1](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Retiring_Titles_Rank.png)
-![Image2](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Mentorship_eligibility_Analyze.png)
+![Image1](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Images/Retiring_Titles_Rank.png)
+![Image2](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Images/Mentorship_eligibility_Analyze.png)
 
 - The highest number of retirees will be Senior Engineers (at 25,916) whereas the lowest will be managers (only 2 will be retiring). 
 - The second highest number of retirees will be those with the title of Senior Staff. 
