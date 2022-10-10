@@ -25,8 +25,8 @@ The dataset comprises of the following CSV files:
  - [Department Employees](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Data/dept_emp.csv) 
  - [Department Manager](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Data/dept_manager.csv)
  - [Employees](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Data/employees.csv) 
- - [Salaries (Employee Code, Salary, Dates)](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Data/salaries.csv)
- - [Titles (Employee Code, Title, Dates)](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Data/titles.csv)
+ - [Salaries](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Data/salaries.csv)
+ - [Titles](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Data/titles.csv)
 
 ### Tools Used:
  - SQL
@@ -38,9 +38,9 @@ In order to efficiently perform the analysis, an Entity Relationships Diagram (E
  - departments
  - employees
  - dept_manager
+ - dept_emp
  - salaries
  - titles
- - dept_emp
 
 ![ERD for the 6 data tables we were provided with](https://github.com/SohaT7/Pewlett-Hackard-Analysis-/blob/main/Images/EmployeeDB.png)
 
